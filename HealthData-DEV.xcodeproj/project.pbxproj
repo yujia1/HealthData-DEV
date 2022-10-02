@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85B29D4628DA42160020657C /* RealTimeHealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B29D4528DA42160020657C /* RealTimeHealthStore.swift */; };
+		85B29D4C28DCDF880020657C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85B29D4B28DCDF880020657C /* Assets.xcassets */; };
+		85B29D5228DCDF880020657C /* iHealthData-DEV WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 85B29D5128DCDF880020657C /* iHealthData-DEV WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		85B29D5728DCDF880020657C /* HealthData_DEVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B29D5628DCDF880020657C /* HealthData_DEVApp.swift */; };
+		85B29D5928DCDF880020657C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B29D5828DCDF880020657C /* ContentView.swift */; };
+		85B29D5B28DCDF880020657C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B29D5A28DCDF880020657C /* NotificationController.swift */; };
+		85B29D5D28DCDF880020657C /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B29D5C28DCDF880020657C /* NotificationView.swift */; };
+		85B29D5F28DCDF880020657C /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B29D5E28DCDF880020657C /* ComplicationController.swift */; };
+		85B29D6128DCDF880020657C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85B29D6028DCDF880020657C /* Assets.xcassets */; };
+		85B29D6428DCDF880020657C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85B29D6328DCDF880020657C /* Preview Assets.xcassets */; };
+		85B29D6928DCDF880020657C /* iHealthData-DEV.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 85B29D4928DCDF860020657C /* iHealthData-DEV.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		85BD877C28CEAFD100F28CFB /* HealthData_DEVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BD877B28CEAFD100F28CFB /* HealthData_DEVApp.swift */; };
+		85BD877E28CEAFD100F28CFB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BD877D28CEAFD100F28CFB /* ContentView.swift */; };
+		85BD878028CEAFD200F28CFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85BD877F28CEAFD200F28CFB /* Assets.xcassets */; };
+		85BD878328CEAFD200F28CFB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85BD878228CEAFD200F28CFB /* Preview Assets.xcassets */; };
+		85BD878B28CEB03800F28CFB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 85BD878A28CEB03800F28CFB /* FirebaseAuth */; };
+		85BD878D28CEB03800F28CFB /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 85BD878C28CEB03800F28CFB /* FirebaseDatabase */; };
+		85BD878F28CEB03800F28CFB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 85BD878E28CEB03800F28CFB /* FirebaseFirestore */; };
+		85BD879128CEB1D100F28CFB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85BD879028CEB1D100F28CFB /* GoogleService-Info.plist */; };
+		85BD879428CEB25200F28CFB /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BD879328CEB25200F28CFB /* AuthView.swift */; };
+		85BD879728CEB31B00F28CFB /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BD879628CEB31B00F28CFB /* DataManager.swift */; };
+		85BD879A28CEB37800F28CFB /* HealthModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BD879928CEB37800F28CFB /* HealthModels.swift */; };
+		85BD879D28CEB41500F28CFB /* RoundedShap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BD879C28CEB41500F28CFB /* RoundedShap.swift */; };
+		85BD87A028CEB5DB00F28CFB /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BD879F28CEB5DB00F28CFB /* HealthStore.swift */; };
+		85BD87A528CED37A00F28CFB /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BD87A428CED37A00F28CFB /* ListView.swift */; };
+		85BD87A928D18E2C00F28CFB /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85BD87A828D18E2C00F28CFB /* HealthKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85B29D5328DCDF880020657C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85BD877028CEAFD100F28CFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85B29D5028DCDF880020657C;
+			remoteInfo = "iHealthData-DEV WatchKit Extension";
+		};
+		85B29D6728DCDF880020657C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85BD877028CEAFD100F28CFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85B29D4828DCDF860020657C;
+			remoteInfo = "iHealthData-DEV";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		85B29D6D28DCDF880020657C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				85B29D5228DCDF880020657C /* iHealthData-DEV WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85B29D7128DCDF880020657C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				85B29D6928DCDF880020657C /* iHealthData-DEV.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		85B29D4528DA42160020657C /* RealTimeHealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeHealthStore.swift; sourceTree = "<group>"; };
+		85B29D4928DCDF860020657C /* iHealthData-DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iHealthData-DEV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85B29D4B28DCDF880020657C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85B29D5128DCDF880020657C /* iHealthData-DEV WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "iHealthData-DEV WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85B29D5628DCDF880020657C /* HealthData_DEVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthData_DEVApp.swift; sourceTree = "<group>"; };
+		85B29D5828DCDF880020657C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		85B29D5A28DCDF880020657C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		85B29D5C28DCDF880020657C /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		85B29D5E28DCDF880020657C /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		85B29D6028DCDF880020657C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85B29D6328DCDF880020657C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		85B29D6528DCDF880020657C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85B29D6628DCDF880020657C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		85BD877828CEAFD100F28CFB /* HealthData-DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HealthData-DEV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85BD877B28CEAFD100F28CFB /* HealthData_DEVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthData_DEVApp.swift; sourceTree = "<group>"; };
+		85BD877D28CEAFD100F28CFB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		85BD877F28CEAFD200F28CFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85BD878228CEAFD200F28CFB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		85BD879028CEB1D100F28CFB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		85BD879328CEB25200F28CFB /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		85BD879628CEB31B00F28CFB /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		85BD879928CEB37800F28CFB /* HealthModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthModels.swift; sourceTree = "<group>"; };
+		85BD879C28CEB41500F28CFB /* RoundedShap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShap.swift; sourceTree = "<group>"; };
+		85BD879F28CEB5DB00F28CFB /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
+		85BD87A428CED37A00F28CFB /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		85BD87A828D18E2C00F28CFB /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		85BD87AA28D1982600F28CFB /* HealthData-DEV.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HealthData-DEV.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85B29D4E28DCDF880020657C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85BD877528CEAFD100F28CFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85BD878D28CEB03800F28CFB /* FirebaseDatabase in Frameworks */,
+				85BD87A928D18E2C00F28CFB /* HealthKit.framework in Frameworks */,
+				85BD878B28CEB03800F28CFB /* FirebaseAuth in Frameworks */,
+				85BD878F28CEB03800F28CFB /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85B29D4A28DCDF860020657C /* iHealthData-DEV */ = {
+			isa = PBXGroup;
+			children = (
+				85B29D4B28DCDF880020657C /* Assets.xcassets */,
+			);
+			path = "iHealthData-DEV";
+			sourceTree = "<group>";
+		};
+		85B29D5528DCDF880020657C /* iHealthData-DEV WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				85B29D5628DCDF880020657C /* HealthData_DEVApp.swift */,
+				85B29D5828DCDF880020657C /* ContentView.swift */,
+				85B29D5A28DCDF880020657C /* NotificationController.swift */,
+				85B29D5C28DCDF880020657C /* NotificationView.swift */,
+				85B29D5E28DCDF880020657C /* ComplicationController.swift */,
+				85B29D6028DCDF880020657C /* Assets.xcassets */,
+				85B29D6528DCDF880020657C /* Info.plist */,
+				85B29D6628DCDF880020657C /* PushNotificationPayload.apns */,
+				85B29D6228DCDF880020657C /* Preview Content */,
+			);
+			path = "iHealthData-DEV WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		85B29D6228DCDF880020657C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				85B29D6328DCDF880020657C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		85BD876F28CEAFD100F28CFB = {
+			isa = PBXGroup;
+			children = (
+				85BD877A28CEAFD100F28CFB /* HealthData-DEV */,
+				85B29D4A28DCDF860020657C /* iHealthData-DEV */,
+				85B29D5528DCDF880020657C /* iHealthData-DEV WatchKit Extension */,
+				85BD877928CEAFD100F28CFB /* Products */,
+				85BD87A728D18E2C00F28CFB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		85BD877928CEAFD100F28CFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85BD877828CEAFD100F28CFB /* HealthData-DEV.app */,
+				85B29D4928DCDF860020657C /* iHealthData-DEV.app */,
+				85B29D5128DCDF880020657C /* iHealthData-DEV WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85BD877A28CEAFD100F28CFB /* HealthData-DEV */ = {
+			isa = PBXGroup;
+			children = (
+				85BD87AA28D1982600F28CFB /* HealthData-DEV.entitlements */,
+				85BD87A328CED36900F28CFB /* Views */,
+				85BD879E28CEB5AF00F28CFB /* HealthStore */,
+				85BD879B28CEB3FA00F28CFB /* Utils */,
+				85BD879828CEB36500F28CFB /* Model */,
+				85BD879528CEB30700F28CFB /* DataManager */,
+				85BD879228CEB22B00F28CFB /* Auth */,
+				85BD879028CEB1D100F28CFB /* GoogleService-Info.plist */,
+				85BD877B28CEAFD100F28CFB /* HealthData_DEVApp.swift */,
+				85BD877D28CEAFD100F28CFB /* ContentView.swift */,
+				85BD877F28CEAFD200F28CFB /* Assets.xcassets */,
+				85BD878128CEAFD200F28CFB /* Preview Content */,
+			);
+			path = "HealthData-DEV";
+			sourceTree = "<group>";
+		};
+		85BD878128CEAFD200F28CFB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				85BD878228CEAFD200F28CFB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		85BD879228CEB22B00F28CFB /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				85BD879328CEB25200F28CFB /* AuthView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		85BD879528CEB30700F28CFB /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				85BD879628CEB31B00F28CFB /* DataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		85BD879828CEB36500F28CFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				85BD879928CEB37800F28CFB /* HealthModels.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		85BD879B28CEB3FA00F28CFB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				85BD879C28CEB41500F28CFB /* RoundedShap.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		85BD879E28CEB5AF00F28CFB /* HealthStore */ = {
+			isa = PBXGroup;
+			children = (
+				85BD879F28CEB5DB00F28CFB /* HealthStore.swift */,
+				85B29D4528DA42160020657C /* RealTimeHealthStore.swift */,
+			);
+			path = HealthStore;
+			sourceTree = "<group>";
+		};
+		85BD87A328CED36900F28CFB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				85BD87A428CED37A00F28CFB /* ListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		85BD87A728D18E2C00F28CFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85BD87A828D18E2C00F28CFB /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85B29D4828DCDF860020657C /* iHealthData-DEV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85B29D6E28DCDF880020657C /* Build configuration list for PBXNativeTarget "iHealthData-DEV" */;
+			buildPhases = (
+				85B29D4728DCDF860020657C /* Resources */,
+				85B29D6D28DCDF880020657C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85B29D5428DCDF880020657C /* PBXTargetDependency */,
+			);
+			name = "iHealthData-DEV";
+			productName = "iHealthData-DEV";
+			productReference = 85B29D4928DCDF860020657C /* iHealthData-DEV.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		85B29D5028DCDF880020657C /* iHealthData-DEV WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85B29D6A28DCDF880020657C /* Build configuration list for PBXNativeTarget "iHealthData-DEV WatchKit Extension" */;
+			buildPhases = (
+				85B29D4D28DCDF880020657C /* Sources */,
+				85B29D4E28DCDF880020657C /* Frameworks */,
+				85B29D4F28DCDF880020657C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iHealthData-DEV WatchKit Extension";
+			productName = "iHealthData-DEV WatchKit Extension";
+			productReference = 85B29D5128DCDF880020657C /* iHealthData-DEV WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		85BD877728CEAFD100F28CFB /* HealthData-DEV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85BD878628CEAFD200F28CFB /* Build configuration list for PBXNativeTarget "HealthData-DEV" */;
+			buildPhases = (
+				85BD877428CEAFD100F28CFB /* Sources */,
+				85BD877528CEAFD100F28CFB /* Frameworks */,
+				85BD877628CEAFD100F28CFB /* Resources */,
+				85B29D7128DCDF880020657C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85B29D6828DCDF880020657C /* PBXTargetDependency */,
+			);
+			name = "HealthData-DEV";
+			packageProductDependencies = (
+				85BD878A28CEB03800F28CFB /* FirebaseAuth */,
+				85BD878C28CEB03800F28CFB /* FirebaseDatabase */,
+				85BD878E28CEB03800F28CFB /* FirebaseFirestore */,
+			);
+			productName = "HealthData-DEV";
+			productReference = 85BD877828CEAFD100F28CFB /* HealthData-DEV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85BD877028CEAFD100F28CFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					85B29D4828DCDF860020657C = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					85B29D5028DCDF880020657C = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					85BD877728CEAFD100F28CFB = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 85BD877328CEAFD100F28CFB /* Build configuration list for PBXProject "HealthData-DEV" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85BD876F28CEAFD100F28CFB;
+			packageReferences = (
+				85BD878928CEB03800F28CFB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 85BD877928CEAFD100F28CFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85BD877728CEAFD100F28CFB /* HealthData-DEV */,
+				85B29D4828DCDF860020657C /* iHealthData-DEV */,
+				85B29D5028DCDF880020657C /* iHealthData-DEV WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85B29D4728DCDF860020657C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85B29D4C28DCDF880020657C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85B29D4F28DCDF880020657C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85B29D6428DCDF880020657C /* Preview Assets.xcassets in Resources */,
+				85B29D6128DCDF880020657C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85BD877628CEAFD100F28CFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85BD878328CEAFD200F28CFB /* Preview Assets.xcassets in Resources */,
+				85BD879128CEB1D100F28CFB /* GoogleService-Info.plist in Resources */,
+				85BD878028CEAFD200F28CFB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85B29D4D28DCDF880020657C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85B29D5B28DCDF880020657C /* NotificationController.swift in Sources */,
+				85B29D5928DCDF880020657C /* ContentView.swift in Sources */,
+				85B29D5F28DCDF880020657C /* ComplicationController.swift in Sources */,
+				85B29D5728DCDF880020657C /* HealthData_DEVApp.swift in Sources */,
+				85B29D5D28DCDF880020657C /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85BD877428CEAFD100F28CFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85B29D4628DA42160020657C /* RealTimeHealthStore.swift in Sources */,
+				85BD877E28CEAFD100F28CFB /* ContentView.swift in Sources */,
+				85BD879728CEB31B00F28CFB /* DataManager.swift in Sources */,
+				85BD87A028CEB5DB00F28CFB /* HealthStore.swift in Sources */,
+				85BD879A28CEB37800F28CFB /* HealthModels.swift in Sources */,
+				85BD879D28CEB41500F28CFB /* RoundedShap.swift in Sources */,
+				85BD877C28CEAFD100F28CFB /* HealthData_DEVApp.swift in Sources */,
+				85BD879428CEB25200F28CFB /* AuthView.swift in Sources */,
+				85BD87A528CED37A00F28CFB /* ListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85B29D5428DCDF880020657C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85B29D5028DCDF880020657C /* iHealthData-DEV WatchKit Extension */;
+			targetProxy = 85B29D5328DCDF880020657C /* PBXContainerItemProxy */;
+		};
+		85B29D6828DCDF880020657C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85B29D4828DCDF860020657C /* iHealthData-DEV */;
+			targetProxy = 85B29D6728DCDF880020657C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		85B29D6B28DCDF880020657C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iHealthData-DEV WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = DDFP44TMP6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iHealthData-DEV WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "iHealthData-DEV WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.YJ.HealthData-DEV.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		85B29D6C28DCDF880020657C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iHealthData-DEV WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = DDFP44TMP6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iHealthData-DEV WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "iHealthData-DEV WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.YJ.HealthData-DEV.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		85B29D6F28DCDF880020657C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DDFP44TMP6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = iHealthData_DEV_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "iHealthData-DEV";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.YJ.HealthData-DEV";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.YJ.HealthData-DEV.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		85B29D7028DCDF880020657C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DDFP44TMP6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = iHealthData_DEV_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "iHealthData-DEV";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.YJ.HealthData-DEV";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.YJ.HealthData-DEV.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		85BD878428CEAFD200F28CFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		85BD878528CEAFD200F28CFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85BD878728CEAFD200F28CFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "HealthData-DEV/HealthData-DEV.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HealthData-DEV/Preview Content\"";
+				DEVELOPMENT_TEAM = DDFP44TMP6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "access to health clinical data";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "ability to read health data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "ability to write health data";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.YJ.HealthData-DEV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		85BD878828CEAFD200F28CFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "HealthData-DEV/HealthData-DEVRelease.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HealthData-DEV/Preview Content\"";
+				DEVELOPMENT_TEAM = DDFP44TMP6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "access to health clinical data";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "ability to read health data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "ability to write health data";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.YJ.HealthData-DEV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85B29D6A28DCDF880020657C /* Build configuration list for PBXNativeTarget "iHealthData-DEV WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85B29D6B28DCDF880020657C /* Debug */,
+				85B29D6C28DCDF880020657C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85B29D6E28DCDF880020657C /* Build configuration list for PBXNativeTarget "iHealthData-DEV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85B29D6F28DCDF880020657C /* Debug */,
+				85B29D7028DCDF880020657C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85BD877328CEAFD100F28CFB /* Build configuration list for PBXProject "HealthData-DEV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85BD878428CEAFD200F28CFB /* Debug */,
+				85BD878528CEAFD200F28CFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85BD878628CEAFD200F28CFB /* Build configuration list for PBXNativeTarget "HealthData-DEV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85BD878728CEAFD200F28CFB /* Debug */,
+				85BD878828CEAFD200F28CFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		85BD878928CEB03800F28CFB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		85BD878A28CEB03800F28CFB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85BD878928CEB03800F28CFB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		85BD878C28CEB03800F28CFB /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85BD878928CEB03800F28CFB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		85BD878E28CEB03800F28CFB /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85BD878928CEB03800F28CFB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 85BD877028CEAFD100F28CFB /* Project object */;
+}
